@@ -5,13 +5,15 @@ body {
   justify-content: center;
 }
 
-/* #eminem {
-  padding-left: 40px;
-} */
-
 .sidebar {
   border-radius: 5px;
   color: grey;
+}
+
+#centralPage {
+  overflow-y: scroll;
+  overflow-x: scroll;
+  height: 635px;
 }
 
 .sidebarAlbumList {
@@ -323,6 +325,12 @@ table {
 .Song-Type {
   color: white;
 }
+
+#centralImage {
+  width: 2000px;
+  object-fit: cover;
+}
+
 .Popular-list {
   color: white;
   background: rgb(0, 0, 0);
@@ -331,6 +339,7 @@ table {
     rgba(0, 0, 0, 1) 70%,
     rgba(99, 96, 96, 0.945) 83%
   );
+  width: 2000px;
 }
 .Playlist {
   padding-bottom: 0%;

@@ -11,10 +11,11 @@ function fetchEminem() {
     })
     .then((songs) => {
       console.log(songs.data);
+      let num = 1;
       for (const song of songs.data) {
         eminemDiv.innerHTML += `
                <div>
-                ${song.title_short}
+              ${num++}  ${song.title_short}
                </div>
              `;
       }
@@ -37,9 +38,11 @@ function fetchMetallica() {
     })
     .then((songs) => {
       console.log(songs.data);
+      let num = 1;
       for (const song of songs.data) {
         metallicaDiv.innerHTML += `
                <div>
+               ${num++}
                 ${song.title_short}
                </div>
              `;
@@ -63,9 +66,11 @@ function fetchBehemoth() {
     })
     .then((songs) => {
       console.log(songs.data);
+      let num = 1;
       for (const song of songs.data) {
         behemothDiv.innerHTML += `
                <div>
+               ${num++}
                 ${song.title_short}
                </div>
              `;
